@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Build",
+      "program": "${workspaceFolder}/dist/main.js",
+      "preLaunchTask": "tsc: build",
+      "outputCapture": "std",
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "sourceMaps": true
+    }
+  ]
+}
